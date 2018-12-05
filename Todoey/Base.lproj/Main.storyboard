@@ -32,7 +32,27 @@
                             <outlet property="delegate" destination="Sdt-gf-UMg" id="J0L-xE-Iwo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TodoList" id="2qK-FS-Jyh"/>
+                    <navigationItem key="navigationItem" title="TodoList" id="2qK-FS-Jyh">
+                        <barButtonItem key="rightBarButtonItem" id="8JX-zQ-iIu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="bNR-6O-fss">
+                                <rect key="frame" x="276" y="0.0" width="83" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="40"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="AddItem:" destination="Sdt-gf-UMg" eventType="touchUpInside" id="qYd-H8-Aew"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROQ-jh-wAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
